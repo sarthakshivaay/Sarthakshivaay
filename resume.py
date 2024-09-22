@@ -224,6 +224,6 @@ def get_pdf_download_button(pdf_file_path, button_text):
     st.download_button(label=button_text, data=PDFbyte, file_name="Sarthak_Resume.pdf", mime='application/octet-stream')
 
 # Adding the download button for the resume PDF
-get_pdf_download_button('/RES_WEB/Sarthak_Resume.pdf', 'Download my Resume as PDF')
+get_pdf_download_button('Sarthak_Resume.pdf', 'Download my Resume as PDF')
 
 
