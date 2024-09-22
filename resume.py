@@ -100,7 +100,7 @@ def get_image_base64(image_path):
         return base64.b64encode(img_file.read()).decode("utf-8")
 
 # Load image as base64
-image_base64 = get_image_base64("C:/Res_WEB/DSC_4604 a.JPG")  # Correct path to high-quality image
+image_base64 = get_image_base64("C:/Res_WEB/images/DSC_4604 a.JPG")  # Correct path to high-quality image
 
 # Custom CSS for the image (Ensure no distortion, border for design)
 st.markdown("""
