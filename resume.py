@@ -92,7 +92,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Header
-st.write('''# Sarthak Tyagi\n##### *Resume*''')
+st.write('''# Sarthak Tyagi\n''')
 
 # Profile Image
 def get_image_base64(image_path):
