@@ -92,7 +92,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Header
-st.write('''# Sarthak Tyagi\n##### *Resume*''')
+st.write('''# Sarthak Tyagi\n''')
 
 # Profile Image
 def get_image_base64(image_path):
@@ -100,7 +100,10 @@ def get_image_base64(image_path):
         return base64.b64encode(img_file.read()).decode("utf-8")
 
 # Load image as base64
-image_base64 = get_image_base64("C:/Res_WEB/images/DSC_4604 a.JPG")  # Correct path to high-quality image
+ # Correct path to high-quality image
+
+image_base64 = get_image_base64("images/DSC_4604 a.JPG")  # Correct path to high-quality image
+
 
 # Custom CSS for the image (Ensure no distortion, border for design)
 st.markdown("""
@@ -224,6 +227,6 @@ def get_pdf_download_button(pdf_file_path, button_text):
     st.download_button(label=button_text, data=PDFbyte, file_name="Sarthak_Resume.pdf", mime='application/octet-stream')
 
 # Adding the download button for the resume PDF
-get_pdf_download_button('/RES_WEB/Sarthak_Resume.pdf', 'Download my Resume as PDF')
+get_pdf_download_button('Sarthak_Resume.pdf', 'Download my Resume as PDF')
 
 
